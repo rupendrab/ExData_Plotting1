@@ -5,14 +5,14 @@ source("set_config.R")
 
 if (! any(ls() == "powerConsumptionData")) {
         if (file.exists(datafile)) {
-                powerConsumptionData <- LoadPowerConsumptionData(datafile, c("1/2/2007", "2/2/2007"))
+                powerConsumptionData <- LoadPowerConsumptionData(datafile, analDates)
         }
 }
 
 # If the power consumption data is loaded, generate the corresponding plot
 
 if (any(ls() == "powerConsumptionData")) {
-        # Refer to common_functions.R for the source code of create_plot1 function
+        # Refer to common_functions.R for the source code of DisplayPlot1 function
         DisplayPlot1(powerConsumptionData, "plot1.png")
 }
 
