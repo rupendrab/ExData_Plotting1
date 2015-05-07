@@ -57,7 +57,6 @@ closing unused connection 3 (~/Documents/Coursera/ExploratoryDataAnalysis/data/h
 
 8. You can also view the plots on the console like below.
 
-> DisplayPlot4(powerConsumptionData)
 > DisplayPlot1(powerConsumptionData)
 > DisplayPlot2(powerConsumptionData)
 > DisplayPlot3(powerConsumptionData)
