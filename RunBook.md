@@ -1,12 +1,25 @@
-# Instructions on Running the scripts for this Project
+# Brief code description and instructions on running the scripts for this Project
+
+### Pre-requisites
 
 The following packages must be installed for this package. Please install them before running the source code.
 
 1. sqldf
 2. dplyr
 
-The following is a possible way of running the scripts.
+### Code Files
 
+1. set_config.R (Defines the configuration parameters like the data file name, dates to filter by, so they can be changed in one place)
+2. common_functions.R (All code is written here in terms of functions for quick code re-usability. This specifically helps in the case of plot4, which actually embeds plot2 and plot3 inside it)
+3. plot1.R (Generated plot 1)
+4. plot2.R (Generated plot 2)
+5. plot3.R (Generated plot 3)
+6. plot4.R (Generated plot 4)
+
+
+### Run Instructions
+
+You may run the scripts like the following.
 
 ```
 1. First edit the file set_config.R to change variable datafile to where your Power Consumption File is stored
